@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo-alura-letra-a.svg">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/logo-alura-letra-a.svg" alt="Logo da Alura letra A">
+    </header>
+
+    <main class="main">
+        <section>
+            <textarea name="input texto" cols="45" rows="7" class="input-texto" placeholder="Digite seu texto"></textarea>
+            <div>
+                <h6> 🛈 Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar ()">  
+                    Criptografar
+                </button>   
+                <button class="descriptar" onclick="btnDescriptar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <textarea name="mensagem" cols="13" rows="11" class="mensagem"></textarea>  
+            <button class="copiar" onclick="copiarTexto()">
+            Copiar
+            </button>     
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 
+            Desenvolvido por:
+            <img src="img/logo-gitub.svg" alt="logo-do-github" align="center">
+            <a href="https://github.com/Ruanrodrigues07">Ruan Rodrigues</a>
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+</html>
